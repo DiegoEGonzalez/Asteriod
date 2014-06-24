@@ -106,10 +106,8 @@ public class Player {
         time = System.currentTimeMillis();
         } else {
             int timeTook=(int)(Math.abs(time-System.currentTimeMillis())/10);
-            System.out.println(timeTook);
             if(timeTook<1000){
                 score+=(a*1000)/timeTook;
-                System.out.println("Added: "+(a*1000)/timeTook);
             } else {
                 score+=a;
             }

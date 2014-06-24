@@ -19,6 +19,11 @@ public class Main  {
                 for (;;){
                     run.update();
                     run.repaint();
+                    try {
+                        Thread.sleep(30);
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
                 }
 
     }
